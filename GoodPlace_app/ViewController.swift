@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
+    
+    let db = Database.database().reference().child("searchHistory")
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -50,6 +53,7 @@ class ViewController: UIViewController {
                     self.dataModel = try JSONDecoder().decode(DataModel.self, from: hasData)
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
+                        
                     }
                 }catch{
                     print(error)
@@ -102,6 +106,8 @@ extension ViewController: UISearchBarDelegate {
         
         term = hasText
         requestAPI()
+        let timestamp: Double = Date().timeIntervalSince1970.rounded()
+        self.db.childByAutoId().setValue(["term": term, "timestamp": timestamp])
         self.view.endEditing(true)
     }
 }

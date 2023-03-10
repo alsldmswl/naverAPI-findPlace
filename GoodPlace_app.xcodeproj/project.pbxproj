@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54592B43594431647515D7D0 /* Pods_GoodPlace_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73A5B609B8A29B979A27C40 /* Pods_GoodPlace_app.framework */; };
 		BDC8A35729B70A2F0005AB3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8A35629B70A2F0005AB3F /* AppDelegate.swift */; };
 		BDC8A35929B70A2F0005AB3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8A35829B70A2F0005AB3F /* SceneDelegate.swift */; };
 		BDC8A35B29B70A2F0005AB3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8A35A29B70A2F0005AB3F /* ViewController.swift */; };
@@ -18,9 +19,12 @@
 		BDC8A37029B741F50005AB3F /* tableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8A36F29B741F50005AB3F /* tableCell.swift */; };
 		BDC8A37229B76FFB0005AB3F /* DetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC8A37129B76FFB0005AB3F /* DetailVC.storyboard */; };
 		BDC8A37429B770130005AB3F /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8A37329B770130005AB3F /* DetailVC.swift */; };
+		BDECB0CE29BA1BC8006B3A47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDECB0CD29BA1BC8006B3A47 /* GoogleService-Info.plist */; };
+		BDECB0D029BA22CF006B3A47 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDECB0CF29BA22CF006B3A47 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B47706FBFB415EC33E917439 /* Pods-GoodPlace_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodPlace_app.debug.xcconfig"; path = "Target Support Files/Pods-GoodPlace_app/Pods-GoodPlace_app.debug.xcconfig"; sourceTree = "<group>"; };
 		BDC8A35329B70A2F0005AB3F /* GoodPlace_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodPlace_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC8A35629B70A2F0005AB3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDC8A35829B70A2F0005AB3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +38,10 @@
 		BDC8A36F29B741F50005AB3F /* tableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCell.swift; sourceTree = "<group>"; };
 		BDC8A37129B76FFB0005AB3F /* DetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailVC.storyboard; sourceTree = "<group>"; };
 		BDC8A37329B770130005AB3F /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		BDECB0CD29BA1BC8006B3A47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BDECB0CF29BA22CF006B3A47 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		BECD660C3EF82F58B5AC50B3 /* Pods-GoodPlace_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodPlace_app.release.xcconfig"; path = "Target Support Files/Pods-GoodPlace_app/Pods-GoodPlace_app.release.xcconfig"; sourceTree = "<group>"; };
+		D73A5B609B8A29B979A27C40 /* Pods_GoodPlace_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodPlace_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54592B43594431647515D7D0 /* Pods_GoodPlace_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93B41114D899CA6C0B0E1A3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B47706FBFB415EC33E917439 /* Pods-GoodPlace_app.debug.xcconfig */,
+				BECD660C3EF82F58B5AC50B3 /* Pods-GoodPlace_app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BDC8A34A29B70A2F0005AB3F = {
 			isa = PBXGroup;
 			children = (
 				BDC8A35529B70A2F0005AB3F /* GoodPlace_app */,
 				BDC8A35429B70A2F0005AB3F /* Products */,
+				93B41114D899CA6C0B0E1A3F /* Pods */,
+				EB81AF3D1CDF2972E15C1D45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,14 +92,24 @@
 				BDC8A36D29B72AC20005AB3F /* DataModel.swift */,
 				BDC8A36F29B741F50005AB3F /* tableCell.swift */,
 				BDC8A37329B770130005AB3F /* DetailVC.swift */,
+				BDECB0CF29BA22CF006B3A47 /* HistoryViewController.swift */,
 				BDC8A37129B76FFB0005AB3F /* DetailVC.storyboard */,
 				BDC8A35C29B70A2F0005AB3F /* Main.storyboard */,
 				BDC8A36429B70A310005AB3F /* LaunchScreen.storyboard */,
 				BDC8A36229B70A310005AB3F /* Assets.xcassets */,
 				BDC8A36729B70A310005AB3F /* Info.plist */,
 				BDC8A35F29B70A2F0005AB3F /* GoodPlace_app.xcdatamodeld */,
+				BDECB0CD29BA1BC8006B3A47 /* GoogleService-Info.plist */,
 			);
 			path = GoodPlace_app;
+			sourceTree = "<group>";
+		};
+		EB81AF3D1CDF2972E15C1D45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D73A5B609B8A29B979A27C40 /* Pods_GoodPlace_app.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDC8A36A29B70A310005AB3F /* Build configuration list for PBXNativeTarget "GoodPlace_app" */;
 			buildPhases = (
+				21CA3454589A3F5CCBDE9103 /* [CP] Check Pods Manifest.lock */,
 				BDC8A34F29B70A2F0005AB3F /* Sources */,
 				BDC8A35029B70A2F0005AB3F /* Frameworks */,
 				BDC8A35129B70A2F0005AB3F /* Resources */,
+				0BF7399115B487597D7D137D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,10 +176,53 @@
 				BDC8A36329B70A310005AB3F /* Assets.xcassets in Resources */,
 				BDC8A37229B76FFB0005AB3F /* DetailVC.storyboard in Resources */,
 				BDC8A35E29B70A2F0005AB3F /* Main.storyboard in Resources */,
+				BDECB0CE29BA1BC8006B3A47 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BF7399115B487597D7D137D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodPlace_app/Pods-GoodPlace_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodPlace_app/Pods-GoodPlace_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodPlace_app/Pods-GoodPlace_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21CA3454589A3F5CCBDE9103 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodPlace_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BDC8A34F29B70A2F0005AB3F /* Sources */ = {
@@ -161,6 +236,7 @@
 				BDC8A35729B70A2F0005AB3F /* AppDelegate.swift in Sources */,
 				BDC8A35929B70A2F0005AB3F /* SceneDelegate.swift in Sources */,
 				BDC8A37429B770130005AB3F /* DetailVC.swift in Sources */,
+				BDECB0D029BA22CF006B3A47 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +378,7 @@
 		};
 		BDC8A36B29B70A310005AB3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B47706FBFB415EC33E917439 /* Pods-GoodPlace_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -329,6 +406,7 @@
 		};
 		BDC8A36C29B70A310005AB3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BECD660C3EF82F58B5AC50B3 /* Pods-GoodPlace_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
